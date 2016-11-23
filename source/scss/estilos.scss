@@ -4,6 +4,12 @@ body{
 .headerPoryectos{
 	background: #FF0000;
 	color:#FFF;
+	& .tituloProyectos{
+		display: block;
+		border:1px solid #FFF;
+		width: 75px;
+		padding: 1.1em 0;
+	}
 }
 .listadoProyectos{
 	background: #FF0000;
