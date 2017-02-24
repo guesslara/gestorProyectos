@@ -4,11 +4,14 @@ body{
 .headerPoryectos{
 	background: #FF0000;
 	color:#FFF;
+	padding: .9em;
 	& .tituloProyectos{
+		border:0px solid #FFF;
+		padding-left: .4em;
+	}
+	& .menu-secundario{
+		text-align: right;
 		display: block;
-		border:1px solid #FFF;
-		width: 75px;
-		padding: 1.1em 0;
 	}
 }
 .listadoProyectos{
