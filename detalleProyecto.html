@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Detalle del proyecto</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/ed-grid/css/estilos.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- <script type="text/javascript" src="libs/w2ui-1.4.3/w2ui-1.4.3.min.js"></script> -->
+	<!-- <link rel="stylesheet" type="text/css" href="libs/w2ui-1.4.3/w2ui-1.4.3.min.css" /> -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="js/detalle.js"></script>
+</head>
+
+<body>
+	<div class="ed-container full headerPoryectos">
+		<div class="ed-item base-70 no-padding">
+			<a href="javascript:void(0)" onclick="mostrarMenu()" title="Mostrar men&uacute;"><span class="icon icon-izquierda"></span></a>
+			<span class="tituloProyectos">Proyecto 1</span>
+		</div>
+		<div class="ed-item base-20"></div>
+		<div class="ed-item base-10 no-padding">
+			<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
+		</div>
+	</div>
+
+	<div class="ed-container full scrollVertical alturaDetalleProyectos">
+		<div class="ed-item">
+			<div class="detalleNombreCompleto">Responsable:</div>
+		</div>
+		<div class="ed-item">
+			<div class="descProyectoDetalles">Gerardo Lara P&eacute;rez</div>
+		</div>
+		<div class="ed-item">
+			<div class="detalleNombreCompleto">Descripci&oacute;n</div>
+		</div>
+		<div class="ed-item">
+			<div class="descProyectoDetalles">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quam ut error natus illo eaque non eos ipsam eius maxime quibusdam, 
+				labore nam, quaerat reiciendis assumenda neque nobis, nesciunt aliquam.
+			</div>
+		</div>
+		<div class="ed-item">
+			<div class="detalleNombreCompleto">Fecha de inicio:</div>
+		</div>
+		<div class="ed-item">
+			<div class="descProyectoDetalles">12 de Enero de 2017</div>
+		</div>
+		<div class="ed-item">
+			<div class="detalleNombreCompleto">Fecha de termino:</div>
+		</div>
+		<div class="ed-item">
+			<div class="descProyectoDetalles">1 de Marzo de 2017</div>
+		</div>
+		<div class="ed-item">
+			<div id="graficoDetalleProyecto" class="graficoDetalleProyecto"></div>
+		</div>
+	</div>
+</body>
+</html>

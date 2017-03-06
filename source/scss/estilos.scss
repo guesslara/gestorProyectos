@@ -1,19 +1,11 @@
+$alturaHeaderP: 51.8;
+$colorBaseP: #FFF;
 body{
 	overflow:hidden;
 }
-.headerPoryectos{
-	background: #FF0000;
-	color:#FFF;
-	padding: .9em;
-	& .tituloProyectos{
-		border:0px solid #FFF;
-		padding-left: .4em;
-	}
-	& .menu-secundario{
-		text-align: right;
-		display: block;
-	}
-}
-.listadoProyectos{
-	background: #FF0000;
-}
+
+@import "_header";
+@import "_menu";
+@import "_listadoProyectos";
+@import "_detallesProyecto.scss";
+

@@ -1,0 +1,60 @@
+.itemsListadoProyectos{
+	height:calc(100vh - 51.8px);
+}
+.bordeInferiorListaProyectos{
+	border-bottom: 1px solid #CCC;
+}
+.bordeDerechoListaProyectos{
+	border-right: 1px solid #F5F5F5;
+}
+.scrollVertical{
+	overflow-y:auto
+}
+.contentListaProyectos{
+	background: $colorBaseP;
+	height: 5em;
+	// border: 1px solid #FF0000;
+	font-weight: normal;
+	& .nameProyecto{
+		// border: 1px solid #FF0000;
+		font-size: .9em;
+		margin-left: .4em;
+		font-weight: 600;
+	}
+	& .descProyecto{
+		// border: 1px solid #FF0000;
+		font-size: .8em;
+		height: 3.2em;
+		margin-left: .4em;
+		font-weight: 200;
+	}
+	& .fechaProyecto{
+		// border: 1px solid #FF0000;
+		font-size: .7em;
+		margin-left: .4em;
+		float: right;
+		font-weight: 400;
+	}
+	& .graficoAvance{
+		// border: 1px solid blue;
+		// width: 107.4px;
+		width: 100%; 
+		height: 79px;
+		text-align: center;
+	}
+	& .seleccionPoryecto{
+		// border: 1px solid green;
+		height: 5em;
+		& a{
+			display: block;
+			// border: 1px solid #FF0000;
+			text-align: center;
+			line-height: 4.95em;
+			color: #666;
+			&:hover{
+				background:#F0F0F0;
+			}
+		}
+	}
+	
+}

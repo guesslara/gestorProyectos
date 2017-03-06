@@ -10,7 +10,7 @@ gulp.task('estilosP', () =>
 	gulp.src('./source/scss/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(cleanCSS({inline: ['local']}))
+		// .pipe(cleanCSS({inline: ['local']}))
 		.pipe(gulp.dest('./css'))
 );
 

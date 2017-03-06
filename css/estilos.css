@@ -1,1 +1,112 @@
-body{overflow:hidden}.headerPoryectos{background:red;color:#fff;padding:.9em}.headerPoryectos .tituloProyectos{border:0 solid #fff;padding-left:.4em}.headerPoryectos .menu-secundario{text-align:right;display:block}.listadoProyectos{background:red}
+body {
+  overflow: hidden; }
+
+.headerPoryectos {
+  background: #FF0000;
+  color: #FFF;
+  padding: .9em; }
+  .headerPoryectos a {
+    color: #FFF; }
+  .headerPoryectos .tituloProyectos {
+    border: 0px solid #FFF;
+    padding-left: .4em; }
+  .headerPoryectos .menu-secundario {
+    text-align: right;
+    display: block; }
+
+.contentMenuProyectos {
+  border: 1px solid #CCC;
+  width: 270px;
+  height: calc(100vh - 51.8px);
+  position: absolute;
+  z-index: 10;
+  background: #FFF;
+  left: -270px; }
+  .contentMenuProyectos .buscadorMenu {
+    padding: .5em; }
+    .contentMenuProyectos .buscadorMenu .txtBuscadorMenu {
+      width: 100%; }
+  .contentMenuProyectos .itemMenuProyectos {
+    font-size: .9em; }
+
+.contentSubmenu {
+  border: 1px solid #CCC;
+  width: 150px;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+  background: #FFF;
+  right: -150px; }
+  .contentSubmenu .itemSubmenuProyectos {
+    font-size: .8em; }
+
+.mostrarMenu {
+  left: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+
+.mostrarSubmenu {
+  right: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+
+.itemsListadoProyectos {
+  height: calc(100vh - 51.8px); }
+
+.bordeInferiorListaProyectos {
+  border-bottom: 1px solid #CCC; }
+
+.bordeDerechoListaProyectos {
+  border-right: 1px solid #F5F5F5; }
+
+.scrollVertical {
+  overflow-y: auto; }
+
+.contentListaProyectos {
+  background: #FFF;
+  height: 5em;
+  font-weight: normal; }
+  .contentListaProyectos .nameProyecto {
+    font-size: .9em;
+    margin-left: .4em;
+    font-weight: 600; }
+  .contentListaProyectos .descProyecto {
+    font-size: .8em;
+    height: 3.2em;
+    margin-left: .4em;
+    font-weight: 200; }
+  .contentListaProyectos .fechaProyecto {
+    font-size: .7em;
+    margin-left: .4em;
+    float: right;
+    font-weight: 400; }
+  .contentListaProyectos .graficoAvance {
+    width: 100%;
+    height: 79px;
+    text-align: center; }
+  .contentListaProyectos .seleccionPoryecto {
+    height: 5em; }
+    .contentListaProyectos .seleccionPoryecto a {
+      display: block;
+      text-align: center;
+      line-height: 4.95em;
+      color: #666; }
+      .contentListaProyectos .seleccionPoryecto a:hover {
+        background: #F0F0F0; }
+
+.detalleNombreCompleto {
+  font-size: .9em;
+  font-weight: 600;
+  padding: 1em 0; }
+
+.descProyectoDetalles {
+  font-size: .8em; }
+
+.graficoDetalleProyecto {
+  border: 1px solid #F0F0F0;
+  height: 290px;
+  width: 315px;
+  margin-top: 15px; }
+
+.alturaDetalleProyectos {
+  height: calc(100% - 51.8px); }
