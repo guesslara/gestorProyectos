@@ -21,7 +21,8 @@ body {
   position: absolute;
   z-index: 10;
   background: #FFF;
-  left: -270px; }
+  left: -270px;
+  display: none; }
   .contentMenuProyectos .buscadorMenu {
     padding: .5em; }
     .contentMenuProyectos .buscadorMenu .txtBuscadorMenu {
@@ -36,19 +37,22 @@ body {
   position: absolute;
   z-index: 10;
   background: #FFF;
-  right: -200px; }
+  right: -200px;
+  display: none; }
   .contentSubmenu .itemSubmenuProyectos {
     font-size: .8em; }
 
 .mostrarMenu {
   left: 0;
   -webkit-transition: all 1s;
-  transition: all 1s; }
+  transition: all 1s;
+  display: block; }
 
 .mostrarSubmenu {
   right: 0;
   -webkit-transition: all 1s;
-  transition: all 1s; }
+  transition: all 1s;
+  display: block; }
 
 .itemsListadoProyectos {
   height: calc(100vh - 51.8px); }
@@ -110,3 +114,6 @@ body {
 
 .alturaDetalleProyectos {
   height: calc(100% - 51.8px); }
+
+.centrarContenido {
+  text-align: center; }
