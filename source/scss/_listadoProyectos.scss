@@ -12,7 +12,7 @@
 }
 .contentListaProyectos{
 	background: $colorBaseP;
-	height: 5em;
+	height: 8em;
 	// border: 1px solid #FF0000;
 	font-weight: normal;
 	& .nameProyecto{
@@ -20,36 +20,38 @@
 		font-size: .9em;
 		margin-left: .4em;
 		font-weight: 600;
+		padding: .3em;
 	}
 	& .descProyecto{
 		// border: 1px solid #FF0000;
-		font-size: .8em;
-		height: 3.2em;
+		font-size: .7em;
+		height: 6.8em;
 		margin-left: .4em;
 		font-weight: 200;
+		padding: .3em;
 	}
 	& .fechaProyecto{
 		// border: 1px solid #FF0000;
 		font-size: .7em;
 		margin-left: .4em;
-		float: right;
 		font-weight: 400;
+		padding: .3em;
 	}
 	& .graficoAvance{
 		// border: 1px solid blue;
-		// width: 107.4px;
-		width: 100%; 
-		height: 79px;
-		text-align: center;
+		width: 122px;
+		// width: 100%; 
+		height: 7.8em;
+		margin:2px auto;
 	}
 	& .seleccionPoryecto{
-		// border: 1px solid green;
-		height: 5em;
+		border: 0px solid green;
+		height: 8em;
 		& a{
 			display: block;
 			// border: 1px solid #FF0000;
 			text-align: center;
-			line-height: 4.95em;
+			line-height: 7.98em;
 			color: #666;
 			&:hover{
 				background:#F0F0F0;

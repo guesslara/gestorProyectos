@@ -71,32 +71,35 @@ body {
 
 .contentListaProyectos {
   background: #FFF;
-  height: 5em;
+  height: 8em;
   font-weight: normal; }
   .contentListaProyectos .nameProyecto {
     font-size: .9em;
     margin-left: .4em;
-    font-weight: 600; }
+    font-weight: 600;
+    padding: .3em; }
   .contentListaProyectos .descProyecto {
-    font-size: .8em;
-    height: 3.2em;
+    font-size: .7em;
+    height: 6.8em;
     margin-left: .4em;
-    font-weight: 200; }
+    font-weight: 200;
+    padding: .3em; }
   .contentListaProyectos .fechaProyecto {
     font-size: .7em;
     margin-left: .4em;
-    float: right;
-    font-weight: 400; }
+    font-weight: 400;
+    padding: .3em; }
   .contentListaProyectos .graficoAvance {
-    width: 100%;
-    height: 79px;
-    text-align: center; }
+    width: 122px;
+    height: 7.8em;
+    margin: 2px auto; }
   .contentListaProyectos .seleccionPoryecto {
-    height: 5em; }
+    border: 0px solid green;
+    height: 8em; }
     .contentListaProyectos .seleccionPoryecto a {
       display: block;
       text-align: center;
-      line-height: 4.95em;
+      line-height: 7.98em;
       color: #666; }
       .contentListaProyectos .seleccionPoryecto a:hover {
         background: #F0F0F0; }
