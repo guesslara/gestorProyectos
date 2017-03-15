@@ -1,0 +1,10 @@
+{
+    "core":[{
+        "errores":"Si",
+        "valorHexadec":"#f00"
+    }],
+    "logs":[{
+        "almacenarErrores":"Si",
+        "path":"./logs/"
+    }]
+}
