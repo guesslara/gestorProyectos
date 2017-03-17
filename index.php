@@ -11,6 +11,4 @@
     $tpl->pparse('index');
     // header("Location: modules/mod_proyectos/index.php?");
     // exit();
-
-
 ?>
