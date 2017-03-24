@@ -20,9 +20,9 @@
 
 		function index(){//funcion inicial del controlador
 			$data['proyectos'] = $this->proyectos_model->getProyectos();
-			// echo "<pre>";
-			// print_r($data);
-			// echo "</pre>";
+			echo "<pre>";
+			print_r($data);
+			echo "</pre>";
 			$this->tpl->set_filenames(array('Proyectos' => 'proyectos'));
             $this->tpl->assign_vars(array(
                 'TEST' => "Bienvenido a Codeigniter HMVC"
