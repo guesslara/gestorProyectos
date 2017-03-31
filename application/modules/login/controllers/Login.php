@@ -30,14 +30,14 @@
 			switch ($this->session->userdata('perfil')) {
 				case '':
 					$data['token'] = $this->token();
-					$data['titulo'] = 'Login 1 con roles de usuario en codeigniter';
+					$data['titulo'] = 'Login - Proyectos';
 					$this->load->view('login_view',$data);
 					break;
 				case '0':
-					redirect(base_url().'admin');
+					redirect(site_url().'/admin');
 					break;
 				case '1':
-					redirect(base_url().'editor');
+					redirect(site_url().'editor');
 					break;
 				default:
 					$data['token'] = $this->token();
@@ -53,7 +53,6 @@
 	            $this->form_validation->set_rules('password', 'password', 'required|trim|min_length[5]|max_length[150]');
 	            //lanzamos mensajes de error si es que los hay
 				if($this->form_validation->run() == FALSE){
-					echo "Error";
 					$this->index();
 				}else{
 					echo "Se valida el usuario";
@@ -74,7 +73,7 @@
 					}
 				}
 			}else{
-				redirect(base_url().'login');
+				redirect(site_url().'/login');
 			}
 		}
 	

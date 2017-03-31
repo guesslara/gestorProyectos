@@ -10,7 +10,7 @@
 		<div class="container_12">
 			<div class="grid_12">
 				<h1 style="text-align: center">Bienvenido de nuevo <?=$nombre." ".$apaterno;?></h1>
-				<?=anchor(base_url().'login/logout_ci', 'Cerrar sesión')?>
+				<?=anchor(site_url().'/login/logout_ci', 'Cerrar sesión')?>
 			</div>
 		</div>	
 	</body>
