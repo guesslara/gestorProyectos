@@ -16,13 +16,25 @@
 
 <body>
 	<div class="ed-container full headerPoryectos">
-		<div class="ed-item base-70 no-padding">
+		<div class="ed-item base-50 tablet-75 web-80 no-padding">
 			<a href="javascript:void(0)" onclick="mostrarMenu()" title="Mostrar men&uacute;"><span class="icon icon-menu"></span></a>
 			<span class="tituloProyectos">Proyectos</span>
 		</div>
-		<div class="ed-item base-20"></div>
-		<div class="ed-item base-10 no-padding">
-			<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
+		<!-- <div class="ed-item base-10">
+			
+		</div> -->
+		<div class="ed-item base-50 tablet-25 web-20 no-padding">
+			<div class="ed-container">
+				<div class="ed-item no-padding base-70">
+					<div class="nombreUsuario">{USUARIO}</div>
+				</div>
+				<div class="ed-item no-padding base-20">
+					<div class="avatarUsr">&nbsp;</div>
+				</div>
+				<div class="ed-item no-padding base-10">
+					<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -54,51 +66,27 @@
 	<!-- Listado de proyectos -->
 	<div class="ed-container full">
 		<div class="ed-item base-100 no-padding itemsListadoProyectos scrollVertical">
-			
+			<ul class="listadoItemsProyectos">
 			<!-- BEGIN LISTADO_PROYECTOS -->
-			<div class="ed-container contentListaProyectos bordeInferiorListaProyectos">
-				<div class="ed-item base-60 tablet-80 web-80 no-padding bordeDerechoListaProyectos">
-					<div class="nameProyecto">{LISTADO_PROYECTOS.NOMBRE}</div>
-					<div class="descProyecto">{LISTADO_PROYECTOS.DESCRIPCION}</div>
-					<div class="fechaProyecto">Finaliza el {LISTADO_PROYECTOS.FECHA_VENCIMIENTO}</div>
-				</div>
-				<div class="ed-item base-30 tablet-10 web-15 no-padding bordeDerechoListaProyectos">
-					<div id="{LISTADO_PROYECTOS.ID_DIVGRAFICO}" class="graficoAvance"></div>
-				</div>
-				<div class="ed-item base-10 tablet-10 web-5 no-padding">
-					<div class="seleccionPoryecto"><a href="{LISTADO_PROYECTOS.RUTA_DETALLE}" title="De clic para mostrar el detalle del proyecto"><span class="icon icon-derecha"></span></a></div>
-				</div>
-			</div>
-			<script type="text/javascript">
-		      	(function (valor,id) {
-		        	console.log(valor);
-		        	var div="graficoAvance_"+id;
-		        	console.log(div);
-					try{
-			            if(parseInt(valor) > 0){
-			              	var valorC=100;
-			              	var diffW=valorC - parseFloat(valor);
-			              	var data = google.visualization.arrayToDataTable([
-				               ['Task', 'Hours per Day'],
-				               ['Avance',     parseFloat(valor)],
-				               ['Diferencia',  parseFloat(diffW)]
-			              	]);
-			              	var options = {
-				               pieHole: 0.6,
-				               legend: 'none',
-				               pieSliceText:'none',
-				               colors:['#64b5f6','#E2E2E2']
-			              	};
-			              	var chart = new google.visualization.PieChart(document.getElementById(div));
-			              	chart.draw(data, options);
-			            }
-			        }catch(err){
-			        	console.log(err);
-			        }		        
-		      }('{LISTADO_PROYECTOS.PORCENTAJE}','{LISTADO_PROYECTOS.ID_PROYECTO}'));
-    		</script>
+				<li>
+					<a href="{LISTADO_PROYECTOS.RUTA_DETALLE}" title="De clic para mostrar el detalle del proyecto" class="a_SelectorProyecto">
+						<div class="ed-container contentListaProyectos bordeInferiorListaProyectos">
+							<div class="ed-item base-60 tablet-80 web-80 no-padding bordeDerechoListaProyectos">
+								<div class="nameProyecto">{LISTADO_PROYECTOS.NOMBRE}</div>
+								<div class="descProyecto">{LISTADO_PROYECTOS.DESCRIPCION}</div>
+								<div class="fechaProyecto">Finaliza el {LISTADO_PROYECTOS.FECHA_VENCIMIENTO}</div>
+							</div>
+							<div class="ed-item base-30 tablet-10 web-15 no-padding bordeDerechoListaProyectos">
+								<div id="{LISTADO_PROYECTOS.ID_DIVGRAFICO}" class="graficoAvance"></div>
+							</div>
+							<div class="ed-item base-10 tablet-10 web-5 no-padding">
+								<div class="seleccionPoryecto"><span class="icon icon-derecha selectorProyectos"></span></div>
+							</div>
+						</div>	
+					</a>
 			<!-- END LISTADO_PROYECTOS -->
-
+				</li>
+			</ul>
 		</div>
 	</div>
 

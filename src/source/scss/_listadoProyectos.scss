@@ -10,9 +10,27 @@
 .scrollVertical{
 	overflow-y:auto
 }
+.listadoItemsProyectos{
+	margin-top:0;
+	margin-bottom:0;
+	list-style:none;
+	padding-left:0;
+}
+.a_SelectorProyecto{
+	display: block;
+	border-bottom: 1px solid #cccc;
+	background: #fff;
+}
+.a_SelectorProyecto:hover{
+	background: #f0f0f0;
+}
+.selectorProyectos{
+	display: block;
+	text-align: center;
+	transform: translatey(36px);
+}
 .contentListaProyectos{
-	background: $colorBaseP;
-	height: 8em;
+	height: auto;
 	// border: 1px solid #FF0000;
 	font-weight: normal;
 	& .nameProyecto{
@@ -25,7 +43,7 @@
 	& .descProyecto{
 		// border: 1px solid #FF0000;
 		font-size: .7em;
-		height: 6.8em;
+		height: 3.5em;
 		margin-left: .4em;
 		font-weight: 200;
 		padding: .3em;
@@ -38,25 +56,14 @@
 		padding: .3em;
 	}
 	& .graficoAvance{
-		// border: 1px solid blue;
-		width: 122px;
-		// width: 100%; 
-		height: 7.8em;
-		margin:2px auto;
+		border: 1px solid blue;
+		width: 111px;
+		height: 6em;
+		margin: 0 auto;
 	}
 	& .seleccionPoryecto{
 		border: 0px solid green;
-		height: 8em;
-		& a{
-			display: block;
-			// border: 1px solid #FF0000;
-			text-align: center;
-			line-height: 7.98em;
-			color: #666;
-			&:hover{
-				background:#F0F0F0;
-			}
-		}
+		height: 6em;
 	}
 	
 }

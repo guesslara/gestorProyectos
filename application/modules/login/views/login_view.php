@@ -34,13 +34,13 @@
 </head>
 <body class="login">
 <?php
-	$username = array('name' => 'username', 'placeholder' => 'nombre de usuario','class' => 'form-control top');
-	$password = array('name' => 'password',	'placeholder' => 'introduce tu password','class' => 'form-control bottom');
+	$username = array('name' => 'username', 'placeholder' => 'Usuario','class' => 'form-control top');
+	$password = array('name' => 'password',	'placeholder' => 'Password','class' => 'form-control bottom');
 	$submit = array('name' => 'submit', 'value' => 'Iniciar sesión', 'title' => 'Iniciar sesión','class'=>'btn btn-lg btn-primary btn-block');
 ?>
 <div class="form-signin">
 	<div class="text-center">
-		<img src="<?=base_url();?>dist/assets/img/logo.png" alt="Metis Logo">
+		<!-- <img src="<?=base_url();?>dist/assets/img/logo.png" alt="Metis Logo"> -->
 	</div>
 	<hr>
 	<div class="tab-content">

@@ -34,7 +34,7 @@
 					$this->load->view('login_view',$data);
 					break;
 				case '0':
-					redirect(site_url().'/admin');
+					redirect(site_url().'proyectos');
 					break;
 				case '1':
 					redirect(site_url().'editor');

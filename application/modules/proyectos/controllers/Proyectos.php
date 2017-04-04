@@ -17,14 +17,16 @@
 			parent::__construct();
 			$this->tpl = new Template($this->dirVistas);
 			$this->load->model('proyectos_model');
+			$this->load->library(array('session'));
 			$this->load->helper('url');
 		}
 
 		function index(){//funcion inicial del controlador
-			//echo base_url();
+			if(($this->session->userdata('is_logued_in') == FALSE) || ($this->session->userdata('perfil') != '0')){
+				redirect(base_url().'login');
+			}
 			$this->dirPublico=base_url()."dist";
 			$data['proyectos'] = $this->proyectos_model->getProyectos();
-
 			for ($i=0; $i < count($data["proyectos"]); $i++) {
 				$idDivGrafico="graficoAvance_".$data["proyectos"][$i]["id"];
 				$rutaDetalle=base_url("proyectos/detalleProj/".$data["proyectos"][$i]["id"]);
@@ -39,14 +41,31 @@
 					'RUTA_DETALLE'		=> $rutaDetalle
 				));
 			}
-           
             $this->tpl->assign_vars(array(
-            	'DIR_MOD'  => $this->dirPublico,
-            	'DIR_VIEW' => $this->dirVistas,
-                'TEST' 	   => "Bienvenido a Codeigniter HMVC"
+            	'DIR_MOD'   => $this->dirPublico,
+            	'DIR_VIEW'  => $this->dirVistas,
+                'NOMBRE'	=> $this->session->userdata("nombre"),
+				'APATERNO'  => $this->session->userdata("apaterno"),
+				'USUARIO'	=> $this->session->userdata("username")
             ));
             //mandar a pintar el template
             $this->renderTemplate("Proyectos","proyectos");
+		}
+		function detalleProj($idP){
+			$detalleProj="";
+			$this->dirPublico=base_url()."dist";
+			$detalleProj=$this->proyectos_model->detalleProyecto($idP);
+			echo "<pre>";
+			print_r($detalleProj);
+			echo "</pre>";
+			$this->tpl->assign_vars(array(
+            	'DIR_MOD'   => $this->dirPublico,
+            	'DIR_VIEW'  => $this->dirVistas,
+                'NOMBRE'	=> $this->session->userdata("nombre"),
+				'APATERNO'  => $this->session->userdata("apaterno"),
+				'USUARIO'	=> $this->session->userdata("username")
+            ));
+            $this->renderTemplate("Proyectos","detalleProyectos");
 		}
 		/**
 		 * @parser nombre del archivo sin extension php

@@ -7,13 +7,13 @@ const gulp = require("gulp"),
 	  cleanCSS = require('gulp-clean-css');
 
 gulp.task('estilosP', () =>
-	gulp.src('./source/scss/*.scss')
+	gulp.src('source/scss/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
 		// .pipe(cleanCSS({inline: ['local']}))
-		.pipe(gulp.dest('./css'))
+		.pipe(gulp.dest('../dist/css/'))
 );
 
-gulp.task('default', ()=>
-	gulp.watch('./source/scss/*.scss',['estilosP'])
+gulp.task('default', () =>
+	gulp.watch('source/scss/*.scss',['estilosP'])
 );
