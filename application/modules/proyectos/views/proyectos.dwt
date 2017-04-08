@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="{DIR_MOD}/js/jquery.js"></script>
 	<!-- <script type="text/javascript" src="libs/w2ui-1.4.3/w2ui-1.4.3.min.js"></script> -->
 	<!-- <link rel="stylesheet" type="text/css" href="libs/w2ui-1.4.3/w2ui-1.4.3.min.css" /> -->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
 	<script src="{DIR_MOD}/js/proyectos/js/scripts.js"></script>
 </head>
 

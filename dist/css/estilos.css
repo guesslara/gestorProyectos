@@ -35,7 +35,7 @@ body {
     color: #727272; }
   .header-movi .datosUsuarioApp {
     background: #F44336;
-    border-left: 0px solid #FFFFFF;
+    border-left: 1px solid #FFCDD2;
     float: right;
     width: 160px;
     margin-top: -15px;
@@ -161,39 +161,34 @@ body {
 .menuAppMain {
   width: 225px;
   height: calc(100% - 56px);
-  background: #FFF;
-  margin-top: 0;
+  background: #EEEEEE;
+  margin-top: 2px;
   z-index: 999;
   position: absolute;
   border: 1px solid #CCC;
   left: -225px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
-
-.menuAppMain .img_logoClienteApp {
-  height: 150px;
-  text-align: center; }
-
-.menuAppMain .img_logoClienteApp img {
-  /*max-width: 70%;*/
-  /*height:auto;
-			margin-top: 1.5em;*/ }
-
-.menuAppMain .barraMenuApp {
-  height: calc(100% - 151px);
-  overflow-y: auto; }
+  .menuAppMain .img_logoClienteApp {
+    height: 150px;
+    text-align: center; }
+  .menuAppMain .img_logoClienteApp img {
+    /*max-width: 70%;*/
+    /*height:auto;
+        margin-top: 1.5em;*/ }
+  .menuAppMain .barraMenuApp {
+    height: calc(100% - 151px);
+    overflow-y: auto; }
+  .menuAppMain .estiloAdmonItem {
+    padding: 7px 3px;
+    font-size: 1.1em; }
+  .menuAppMain .estiloAdmonItem:hover {
+    cursor: pointer;
+    background: #e3efff; }
 
 @media screen and (min-width: 768px) {
   .menuAppMain {
     left: 0; } }
-
-.menuAppMain .estiloAdmonItem {
-  padding: 7px 3px;
-  font-size: 1.1em; }
-
-.menuAppMain .estiloAdmonItem:hover {
-  cursor: pointer;
-  background: #e3efff; }
 
 .mostrarMenuAppMain {
   left: 0px; }

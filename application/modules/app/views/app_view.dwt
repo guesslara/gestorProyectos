@@ -1,27 +1,9 @@
-<!-- <!DOCTYPE HTML>
-<html>
-<head>
-	<title></title>
-	<meta charset = "utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Proyectos</title>
-	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/ed-grid/css/estilos.css" />
-	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/estilos.css" />
-	<script type="text/javascript" src="{DIR_MOD}/js/jquery.js"></script>
-</head>
-
-<body>
-	App	
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<title>App - Proyectos</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
-    
 	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/webfonts/demo.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/libs/w2ui/w2ui-1.4.3.min.css" /> -->
@@ -29,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/estilos.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/themes/default.css?{TIME}" /> -->
 	<script type="text/javascript" src="{DIR_MOD}/js/jquery.js"></script>
-    
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!-- <script type="text/javascript" src="public/libs/pagging/pagging.js"></script> -->
     <!-- <script type="text/javascript" src="public/libs/w2ui/w2ui-1.4.3.min.js"></script> -->
     <style type="text/css">
@@ -71,49 +53,37 @@
             </div>
         </div>
     </div>
-	<div id="infoUsuarioApp" class="infoUsuario">
+	<div id="infoUsuarioApp" class="ed-container infoUsuario">
         <!-- <div class="datosUsuario">Perfil</div> -->
-        <div class="datosUsuario"><img src="{LOGOCLIENTE}" border="0" /></div>
-        <div class="datosUsuarioCerrar">
-        	<ul>
-        		<li class="botonesDes"><span class="iconW iconW-bell icono-derecha espacio-iconos"></span>&nbsp;Notificaciones</li>
-                <li class="botonesDes"><span class="iconW iconW-question icono-derecha espacio-iconos"></span>&nbsp;Ayuda</li>
-                <li class="botonesDes"><span class="iconW iconW-lifebuoy icono-derecha espacio-iconos"></span>&nbsp;Soporte</li>
-                <li><span class="iconW iconW-wrench icono-derecha espacio-iconos"></span>&nbsp;Configuraci&oacute;n</li>
-        		<li><span class="iconW iconW-lock"></span>&nbsp;<a href="#" id="cerrarSesion">Cerrar sesi&oacute;n</a></li>
-        	</ul>
+        <div class="ed-item no-padding">
+	        <div class="datosUsuario"><img src="{LOGOCLIENTE}" border="0" /></div>
+	        <div class="datosUsuarioCerrar">
+	        	<ul>
+	        		<li class="botonesDes"><span class="iconW iconW-bell icono-derecha espacio-iconos"></span>&nbsp;Notificaciones</li>
+	                <li class="botonesDes"><span class="iconW iconW-question icono-derecha espacio-iconos"></span>&nbsp;Ayuda</li>
+	                <li class="botonesDes"><span class="iconW iconW-lifebuoy icono-derecha espacio-iconos"></span>&nbsp;Soporte</li>
+	                <li><span class="iconW iconW-wrench icono-derecha espacio-iconos"></span>&nbsp;Configuraci&oacute;n</li>
+	        		<li><span class="iconW iconW-lock"></span>&nbsp;<a href="{URL}login/logout_ci" id="cerrarSesion">Cerrar sesi&oacute;n</a></li>
+	        	</ul>
+	        </div>	
         </div>
     </div>
     <div class="buscadorAppMain">
     	<div class="buscadorLabel"><input type="text" id="txtBusquedaAppMain" placeholder="Búsqueda ..." /></div>
     </div>
-    <div class="menuAppMain">
-    	<!-- <div class="img_logoClienteApp" style="border-bottom:1px solid #F0F0F0;"><img src="{LOGOCLIENTE}" border="0" /></div> -->
-        <div class="barraMenuApp">
-            <!-- <div id="accordion" style="font-size: 10px;margin-left: 5px;margin-right: 5px;">
-                {MENUADMONNUEVO}
-            </div>    --> 
-            <ul class="ed-menu default">
-                <li><a href="#tabsAppContainer-1">Inicio 1</a></li>
-                <li><a href="#tabsAppContainer-2">Inicio 2</a>
-                    <ul>
-                        <li>Submenu 1</li>
-                        <li>Submenu 2</li>
-                    </ul>
-                </li>
-                <li><a href="#tabsAppContainer-3">Inicio 3</a></li>
-                <li><a href="#tabsAppContainer-4">Inicio 4</a></li>
-                <li><a href="#tabsAppContainer-5">Inicio 5</a></li>
-                <li><a href="#tabsAppContainer-6">Inicio 6</a></li>
-                <li><a href="#tabsAppContainer-7">Inicio 7</a></li>
-                <li><a href="#tabsAppContainer-8">Inicio 8</a></li>
-                <li><a href="#tabsAppContainer-9">Inicio 9</a></li>
-                <li><a href="#tabsAppContainer-10">Inicio 10</a></li>
-            </ul>
-        </div>
+    <div class="ed-container menuAppMain">
+    	<div class="ed-item no-padding base-100">
+    		<div class="barraMenuApp">
+    			<ul class="ed-menu default">
+                <li><a href="#" onclick="cargarProyectos('{URL}')">Proyectos</a></li>
+            </ul>	
+    		</div>
+    	</div>
     </div>
     <div class="contenedorModulosApp ed-container total no-padding">
-        <div class="ed-item total no-padding base100" style="border:1px solid #FF0000;height: 100%;"></div>
+        <div class="ed-item total no-padding base100">
+        	<div id="contentAppProyectos" style="border:1px solid #FF0000;height: calc(100vh - 56px);background: #FFF;">Contenedor</div>
+        </div>
     </div>
     <script>
     	$(document).ready(function(){
@@ -151,7 +121,7 @@
 				
 			});
 
-			cargarMenuModulos();
+			//cargarMenuModulos();
 		});
 		//window.onresize=redimensionarModuloPrincipal;
 		function evaluarVentanaAbiertaAppMain(numeroTecla){
@@ -170,26 +140,53 @@
 				break;
 			}
 		}
-		function ajaxApp(accion,c,parametros,divCarga,divResultado,tipoPeticion){
+		function ajaxApp(url,divCarga,divResultado,tipoPeticion){
+			// $.ajax({
+			// 	url: "index.php?m="+m+"&c="+c,
+			// 	type: tipoPeticion,
+			// 	data: parametros,
+			// 	beforeSend:function(){ 
+			// 		$("#"+divCarga).show().html("Procesando Informacion ..."); 
+			// 	},
+			// 	success: function(data) {
+			// 		$("#"+divCarga).hide();
+			// 		controladorAccionesApp(accion,data,divResultado);
+			// 	},
+			// 	timeout:90000000,
+			// 	error:function() {
+			// 	    $("#"+divCarga).hide();
+			// 	    $("#error").show();
+			// 	    $("#error_mensaje").html('Ocurrio un error al procesar la solicitud.');
+			// 	}
+			// });
 			$.ajax({
-				url: "index.php?m="+m+"&c="+c,
+				url: url,
 				type: tipoPeticion,
-				data: parametros,
+				data: "",
 				beforeSend:function(){ 
 					$("#"+divCarga).show().html("Procesando Informacion ..."); 
 				},
 				success: function(data) {
 					$("#"+divCarga).hide();
-					controladorAccionesApp(accion,data,divResultado);
+					//controladorAccionesApp(accion,data,divResultado);
+					$("#"+divResultado).show().html(data);
 				},
 				timeout:90000000,
 				error:function() {
 				    $("#"+divCarga).hide();
-				    $("#error").show();
-				    $("#error_mensaje").html('Ocurrio un error al procesar la solicitud.');
+				    console.log("Error en la peticon ajax")
+				    // $("#error").show();
+				    // $("#error_mensaje").html('Ocurrio un error al procesar la solicitud.');
 				}
 			});
 		}
+		
+		function cargarProyectos(url){
+			console.log('url '+ url);
+			url=url+"proyectos";
+			ajaxApp(url,"contentAppProyectos","contentAppProyectos","POST");
+		}
+
 		function cargarMenuModulos(){
 			idCliente=$("#idClienteAPP").val();
 			idPerfil=$("#idProfileAPP").val();

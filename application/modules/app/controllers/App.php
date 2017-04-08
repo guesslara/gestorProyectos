@@ -34,13 +34,12 @@ class App extends CI_Controller {
 		$this->tpl->assign_vars(array(
         	'DIR_MOD'   => $this->dirPublico,
         	'DIR_VIEW'  => $this->dirVistas,
+        	'URL'		=> base_url(),
             'NOMBRE'	=> $this->session->userdata("nombre"),
 			'APATERNO'  => $this->session->userdata("apaterno"),
 			'USUARIO'	=> $this->session->userdata("username")
         ));
         $this->renderTemplate("App","app_view");
-
-
 	}
 
 	/**
