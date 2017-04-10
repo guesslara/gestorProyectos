@@ -16,14 +16,13 @@
 
 <body>
 	<div class="ed-container full headerPoryectos">
-		<div class="ed-item base-50 tablet-75 web-80 no-padding">
+		<!-- <div class="ed-item base-50 tablet-75 web-80 no-padding">
 			<a href="javascript:void(0)" onclick="mostrarMenu()" title="Mostrar men&uacute;"><span class="icon icon-menu"></span></a>
 			<span class="tituloProyectos">Proyectos</span>
-		</div>
-		<!-- <div class="ed-item base-10">
-			
 		</div> -->
-		<div class="ed-item base-50 tablet-25 web-20 no-padding">
+		<!-- <div class="ed-item base-10">
+		</div> -->
+		<!-- <div class="ed-item base-50 tablet-25 web-20 no-padding">
 			<div class="ed-container">
 				<div class="ed-item no-padding base-70">
 					<div class="nombreUsuario">{USUARIO}</div>
@@ -34,6 +33,16 @@
 				<div class="ed-item no-padding base-10">
 					<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
 				</div>
+			</div>
+		</div> -->
+		<div class="ed-item no-padding base-100">
+			<div style="text-align: center;">
+				<!-- <span><a href="#">Nuevo proyecto</a></span>
+				<span><a href="#">Listar proyectos</a></span> -->
+				<ul class="ed-menu">
+					<li class="estiloMenuModulo"><a href="#" class="activado">Listar proyectos</a></li>
+					<li class="estiloMenuModulo"><a href="#">Nuevo proyecto</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -69,7 +78,7 @@
 			<ul class="listadoItemsProyectos">
 			<!-- BEGIN LISTADO_PROYECTOS -->
 				<li>
-					<a href="{LISTADO_PROYECTOS.RUTA_DETALLE}" title="De clic para mostrar el detalle del proyecto" class="a_SelectorProyecto">
+					<a href="#" onclick="mostrarDetalleProyecto('{LISTADO_PROYECTOS.ID_PROYECTO}','{URL}')" title="De clic para mostrar el detalle del proyecto" class="a_SelectorProyecto">
 						<div class="ed-container contentListaProyectos bordeInferiorListaProyectos">
 							<div class="ed-item base-60 tablet-80 web-80 no-padding bordeDerechoListaProyectos">
 								<div class="nameProyecto">{LISTADO_PROYECTOS.NOMBRE}</div>

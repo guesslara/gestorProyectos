@@ -159,14 +159,14 @@ body {
 
 /*bloque del menu*/
 .menuAppMain {
-  width: 225px;
+  width: 290px;
   height: calc(100% - 56px);
-  background: #EEEEEE;
+  background: #FFFFFF;
   margin-top: 2px;
   z-index: 999;
   position: absolute;
   border: 1px solid #CCC;
-  left: -225px;
+  left: -290px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
   .menuAppMain .img_logoClienteApp {
@@ -198,7 +198,7 @@ body {
     left: -225px; } }
 
 .contenedorModulosApp {
-  background: #FFF;
+  background: #EEEEEE;
   height: calc(100% - 56px);
   color: #000;
   position: relative; }
@@ -208,6 +208,39 @@ body {
     margin-left: 225px;
     width: calc(100% - 225px); } }
 
+.headerPoryectos {
+  background: #F44336;
+  color: #FFF; }
+  .headerPoryectos a {
+    color: #FFF; }
+  .headerPoryectos .tituloProyectos {
+    border: 0px solid #FFF;
+    padding-left: .4em;
+    font-size: .9em; }
+  .headerPoryectos .menu-secundario {
+    text-align: right;
+    display: block; }
+  .headerPoryectos .avatarUsr {
+    border: 1px solid #000000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto; }
+  .headerPoryectos .nombreUsuario {
+    text-align: right;
+    font-size: .9em;
+    margin-right: 6px;
+    margin-top: 4px; }
+
+.estiloMenuModulo {
+  display: inline-block; }
+  .estiloMenuModulo a {
+    color: #FFCDD2;
+    font-size: .8em; }
+  .estiloMenuModulo .activado {
+    border-bottom: 1px solid #FFF;
+    color: #FFF; }
+
 .contentMenuProyectos {
   border: 1px solid #CCC;
   width: 270px;
@@ -215,7 +248,6 @@ body {
   position: absolute;
   z-index: 10;
   background: #FFF;
-  left: -270px;
   display: none; }
   .contentMenuProyectos .buscadorMenu {
     padding: .5em; }

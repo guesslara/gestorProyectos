@@ -1,7 +1,7 @@
 .headerPoryectos{
-	background: #FF0000;
+	background: $primary-color;
 	color:$colorBaseP;
-	padding: .9em;
+	// padding: .9em;
 	a{
 		color: #FFF;
 	}
@@ -31,5 +31,15 @@
 	// a{
 	// 	float:right;
 	// }
-	
+}
+.estiloMenuModulo{
+	display: inline-block;
+	& a{
+		color:$primary-color-light;
+		font-size: .8em;
+	}
+	& .activado{
+		border-bottom:1px solid #FFF;
+		color:#FFF;
+	}
 }

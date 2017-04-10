@@ -41,3 +41,9 @@ function drawChart() {
 	var chart3 = new google.visualization.PieChart(document.getElementById('graficoAvance3'));
 	chart3.draw(data, options);
 }
+function mostrarDetalleProyecto(id,url){
+	console.log(id)
+	console.log(url)
+	url=url+"proyectos/detalleProj/"+id
+	ajaxApp(url,"contentAppProyectos","contentAppProyectos","POST");
+}

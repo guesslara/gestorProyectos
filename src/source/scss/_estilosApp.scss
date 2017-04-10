@@ -191,15 +191,15 @@
 
 /*bloque del menu*/
 .menuAppMain {
-  width: 225px;
+  width: 290px;
   height: -webkit-calc(100% - 56px);
   height: calc(100% - 56px);
-  background: #EEEEEE;
+  background: #FFFFFF;
   margin-top: 2px;
   z-index: 999;
   position: absolute;
   border: 1px solid #CCC;
-  left: -225px;
+  left: -290px;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
   & .img_logoClienteApp {
@@ -245,7 +245,7 @@
 }
 
 .contenedorModulosApp {
-  background: #FFF;
+  background: #EEEEEE;
   height: -webkit-calc(100% - 56px);
   height: calc(100% - 56px);
   color: #000;
