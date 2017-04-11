@@ -56,15 +56,42 @@
 			$detalleProj="";
 			$this->dirPublico=base_url()."dist";
 			$detalleProj=$this->proyectos_model->detalleProyecto($idP);
-			echo "<pre>";
-			print_r($detalleProj);
-			echo "</pre>";
+			// echo "<pre>";
+			// print_r($detalleProj);
+			// echo "</pre>";
+
+			$responsable=explode(",",$detalleProj->responsable);
+
+			// echo "<pre>";
+			// print_r($responsable);
+			// echo "</pre>";
+
+			for ($i=0; $i < count($responsable); $i++) { 
+				$resProj=$this->proyectos_model->getUsrProyectos($responsable[$i]);
+				$this->tpl->assign_block_vars('LISTADO_RESP_PROJ',array(
+					'RESP_PROJ_NOMBRE' 		=> $resProj->nombre,
+					'RESP_PROJ_APATERNO'	=> $resProj->apaterno
+				));
+			}
+
 			$this->tpl->assign_vars(array(
-            	'DIR_MOD'   => $this->dirPublico,
-            	'DIR_VIEW'  => $this->dirVistas,
-                'NOMBRE'	=> $this->session->userdata("nombre"),
-				'APATERNO'  => $this->session->userdata("apaterno"),
-				'USUARIO'	=> $this->session->userdata("username")
+            	'DIR_MOD'   	=> $this->dirPublico,
+            	'DIR_VIEW'  	=> $this->dirVistas,
+            	'URL'			=> base_url(),
+                'NOMBRE'		=> $this->session->userdata("nombre"),
+				'APATERNO'  	=> $this->session->userdata("apaterno"),
+				'USUARIO'		=> $this->session->userdata("username"),
+				'DESC_PROJ'		=> $detalleProj->descripcion,
+				'FECHA_INICIO'	=> $detalleProj->fecha_inicio,
+				'FECHA_TERMINO'	=> $detalleProj->fecha_vencimiento,
+				'NOMBRE_PROJ'	=> $detalleProj->nombre,
+				'HRS_SEMANAL'	=> $detalleProj->HrsSemanal,
+				'HRS_TOTAL'		=> $detalleProj->HrsTotal,
+				'HRS_DIA'		=> $detalleProj->hxdia,
+				'TOTAL_HRS'		=> $detalleProj->totalHoras,
+				'STATUS'		=> $detalleProj->status,
+				'porcentaje'	=> $detalleProj->porcentaje
+
             ));
             $this->renderTemplate("Proyectos","detalleProyectos");
 		}
