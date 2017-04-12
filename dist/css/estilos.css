@@ -159,14 +159,14 @@ body {
 
 /*bloque del menu*/
 .menuAppMain {
-  width: 290px;
+  width: 225px;
   height: calc(100% - 56px);
   background: #FFFFFF;
   margin-top: 2px;
   z-index: 999;
   position: absolute;
   border: 1px solid #CCC;
-  left: -290px;
+  left: -225px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
   .menuAppMain .img_logoClienteApp {
