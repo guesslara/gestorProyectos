@@ -300,11 +300,7 @@ body {
 
 .a_SelectorProyecto {
   display: block;
-  border-bottom: 1px solid #cccc;
-  background: #fff; }
-
-.a_SelectorProyecto:hover {
-  background: #f0f0f0; }
+  border-bottom: 0px solid #cccc; }
 
 .selectorProyectos {
   display: block;
@@ -314,6 +310,7 @@ body {
 
 .contentListaProyectos {
   height: auto;
+  background: #FFF;
   font-weight: normal; }
   .contentListaProyectos .nameProyecto {
     font-size: .9em;

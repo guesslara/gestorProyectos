@@ -18,11 +18,11 @@
 }
 .a_SelectorProyecto{
 	display: block;
-	border-bottom: 1px solid #cccc;
-	background: #fff;
+	border-bottom: 0px solid #cccc;
+	// background: #fff;
 }
 .a_SelectorProyecto:hover{
-	background: #f0f0f0;
+	// background: #f0f0f0;
 }
 .selectorProyectos{
 	display: block;
@@ -31,7 +31,7 @@
 }
 .contentListaProyectos{
 	height: auto;
-	// border: 1px solid #FF0000;
+	background: #FFF;
 	font-weight: normal;
 	& .nameProyecto{
 		// border: 1px solid #FF0000;
