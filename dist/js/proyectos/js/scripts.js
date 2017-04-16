@@ -47,3 +47,9 @@ function mostrarDetalleProyecto(id,url){
 	url=url+"proyectos/detalleProj/"+id
 	ajaxApp(url,"contentAppProyectos","contentAppProyectos","POST");
 }
+function verLogProyectos(id,url){
+	console.log(id)
+	console.log(url)
+	url=url+"proyectos/logProj/"+id;
+	ajaxApp(url,"contentAppProyectos","contentAppProyectos","POST");
+}

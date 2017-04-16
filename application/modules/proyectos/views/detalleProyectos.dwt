@@ -1,67 +1,71 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset = "utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Detalle del proyecto</title>
-	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/ed-grid/css/estilos.css" />
-	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/estilos.css" />
-	<script type="text/javascript" src="{DIR_MOD}/js/jquery.js"></script>
-	<!-- <script type="text/javascript" src="libs/w2ui-1.4.3/w2ui-1.4.3.min.js"></script> -->
-	<!-- <link rel="stylesheet" type="text/css" href="libs/w2ui-1.4.3/w2ui-1.4.3.min.css" /> -->
-	<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
-	<!-- <script type="text/javascript" src="js/detalle.js"></script> -->
-</head>
-
-<body class="">
-	<div class="ed-container full headerPoryectos" style="padding:7px;">
-		<div class="ed-item base-70 no-padding">
-			<a href="javascript:void(0)" onclick="cargarProyectos('{URL}','1')" title="Mostrar men&uacute;"><span class="icon icon-izquierda"></span></a>
-			<span class="tituloProyectos">{NOMBRE_PROJ}</span>
-		</div>
-		<div class="ed-item base-20"></div>
-		<div class="ed-item base-10 no-padding">
-			<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
+<div class="ed-container full headerPoryectos" style="padding:7px;">
+	<div class="ed-item base-70 no-padding">
+		<a href="javascript:void(0)" onclick="cargarProyectos('{URL}','1')" title="Mostrar men&uacute;"><span class="icon icon-izquierda"></span></a>
+		<span class="tituloProyectos">{NOMBRE_PROJ}</span>
+	</div>
+	<div class="ed-item base-20"></div>
+	<div class="ed-item base-10 no-padding">
+		<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
+	</div>
+</div>
+<div class="ed-container alturaDetalleProyectos scrollVertical">
+	<div class="ed-item base-100 movil-20">
+		<div class="detalleNombreCompleto">Responsable:</div>
+	</div>
+	<div class="ed-item base-100 movil-80">
+		<!-- BEGIN LISTADO_RESP_PROJ -->
+		<div class="descProyectoDetalles">{LISTADO_RESP_PROJ.RESP_PROJ_NOMBRE} {LISTADO_RESP_PROJ.RESP_PROJ_APATERNO}</div>
+		<!-- END LISTADO_RESP_PROJ -->
+	</div>
+	<div class="ed-item base-100 movil-20">
+		<div class="detalleNombreCompleto">Descripci&oacute;n</div>
+	</div>
+	<div class="ed-item base-100 movil-70">
+		<div class="descProyectoDetalles">
+			{DESC_PROJ}
 		</div>
 	</div>
-
-	<div class="ed-container alturaDetalleProyectos scrollVertical">
-		<div class="ed-item base-100 movil-20">
-			<div class="detalleNombreCompleto">Responsable:</div>
-		</div>
-		<div class="ed-item base-100 movil-80">
-			<!-- BEGIN LISTADO_RESP_PROJ -->
-			<div class="descProyectoDetalles">{LISTADO_RESP_PROJ.RESP_PROJ_NOMBRE} {LISTADO_RESP_PROJ.RESP_PROJ_APATERNO}</div>
-			<!-- END LISTADO_RESP_PROJ -->
-		</div>
-		<div class="ed-item base-100 movil-20">
-			<div class="detalleNombreCompleto">Descripci&oacute;n</div>
-		</div>
-		<div class="ed-item base-100 movil-70">
-			<div class="descProyectoDetalles">
-				{DESC_PROJ}
-			</div>
-		</div>
-		<div class="ed-item base-40 movil-20 tablet-20">
-			<div class="detalleNombreCompleto">Fecha de inicio:</div>
-		</div>
-		<div class="ed-item base-60 movil-30 tablet-30 no-padding">
-			<div class="descProyectoDetalles">{FECHA_INICIO}</div>
-		</div>
-		<div class="ed-item base-40 movil-20 tablet-20">
-			<div class="detalleNombreCompleto">Fecha de termino:</div>
-		</div>
-		<div class="ed-item base-60 movil-30 tablet-30 no-padding">
-			<div class="descProyectoDetalles">{FECHA_TERMINO}</div>
-		</div>
-		<div class="ed-item base-100 tablet-50">
-			<div id="graficoDetalleProyecto" class="graficoDetalleProyecto"></div>
-		</div>
-		<div class="ed-item base-100 tablet-50">
-			<div class="logDesc web-60"><a href="logEventos.html">Log de eventos</a></div>
-			<div class="delProyecto web-60"><a href="logEventos.html">Eliminar proyecto</a></div>
-		</div>
+	<div class="ed-item base-40 movil-20 tablet-20">
+		<div class="detalleNombreCompleto">Fecha de inicio:</div>
 	</div>
-</body>
-</html>
+	<div class="ed-item base-60 movil-30 tablet-30 no-padding">
+		<div class="descProyectoDetalles">{FECHA_INICIO}</div>
+	</div>
+	<div class="ed-item base-40 movil-20 tablet-20">
+		<div class="detalleNombreCompleto">Fecha de termino:</div>
+	</div>
+	<div class="ed-item base-60 movil-30 tablet-30 no-padding">
+		<div class="descProyectoDetalles">{FECHA_TERMINO}</div>
+	</div>
+	<div class="ed-item base-100 tablet-50">
+		<div id="graficoDetalleProyecto" class="graficoDetalleProyecto"></div>
+	</div>
+	<div class="ed-item base-100 tablet-50">
+		<div class="logDesc web-60"><a href="javascript:verLogProyectos({ID_PROYECTO},'{URL}')">Log de eventos</a></div>
+		<div class="delProyecto web-60"><a href="logEventos.html">Eliminar proyecto</a></div>
+	</div>
+</div>
+<script>
+	var valor={PORCENTAJE};
+
+	chartDetalleProyecto(valor);
+
+	function chartDetalleProyecto(valor) {
+		var diff=100-parseFloat(valor);
+		var data = google.visualization.arrayToDataTable([
+			['Effort', 'Amount given'],
+			['Avance',     parseFloat(valor)],
+			['Faltantes',  parseFloat(diff)],
+		]);
+		var options = {
+			pieHole: 0.6,
+			pieSliceTextStyle: {
+				color: 'white',
+			},
+			legend: 'none',
+			pieSliceText: 'none'
+		};
+		var chart1 = new google.visualization.PieChart(document.getElementById('graficoDetalleProyecto'));
+		chart1.draw(data, options);
+	}
+</script>

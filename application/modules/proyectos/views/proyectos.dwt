@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!-- <!DOCTYPE HTML>
 <html>
 <head>
 	<meta charset = "utf-8">
@@ -7,14 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/ed-grid/css/estilos.css" />
 	<link rel="stylesheet" type="text/css" href="{DIR_MOD}/css/estilos.css" />
-	<script type="text/javascript" src="{DIR_MOD}/js/jquery.js"></script>
+	<script type="text/javascript" src="{DIR_MOD}/js/jquery.js"></script> -->
 	<!-- <script type="text/javascript" src="libs/w2ui-1.4.3/w2ui-1.4.3.min.js"></script> -->
 	<!-- <link rel="stylesheet" type="text/css" href="libs/w2ui-1.4.3/w2ui-1.4.3.min.css" /> -->
 	<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
 	<script src="{DIR_MOD}/js/proyectos/js/scripts.js"></script>
-</head>
+<!-- </head>
 
-<body>
+<body> -->
 	<div class="ed-container full headerPoryectos">
 		<!-- <div class="ed-item base-50 tablet-75 web-80 no-padding">
 			<a href="javascript:void(0)" onclick="mostrarMenu()" title="Mostrar men&uacute;"><span class="icon icon-menu"></span></a>
@@ -99,5 +99,5 @@
 		</div>
 	</div>
 
-</body>
-</html>
+<!-- </body>
+</html> -->

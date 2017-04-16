@@ -188,7 +188,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .menuAppMain {
-    left: 0; } }
+    left: 0; }
+  .iconoBarraApp {
+    display: none; } }
 
 .mostrarMenuAppMain {
   left: 0px; }
@@ -296,7 +298,9 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  width: 1000px;
+  margin: auto; }
 
 .a_SelectorProyecto {
   display: block;
@@ -354,7 +358,8 @@ body {
   margin: 15px auto; }
 
 .alturaDetalleProyectos {
-  height: calc(100vh - 51.8px); }
+  height: calc(100vh - 51.8px);
+  background: #FFFFFF; }
 
 .centrarContenido {
   text-align: center; }

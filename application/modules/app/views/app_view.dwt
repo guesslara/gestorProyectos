@@ -34,7 +34,7 @@
     <input type="hidden" id="baseUrl" value="{URL}" />
     <div class="ed-container total no-padding">
         <div class="ed-item total no-padding header-movi base-100">
-            <span id="menuAppBarra" class="icon icon-menu"></span>
+            <span id="menuAppBarra" class="icon icon-menu iconoBarraApp"></span>
             <span class="tituloApp">Dashboard</span>        
             <div class="datosUsuarioApp">
                 <div class="nombreUsuarioApp">{NOMBRE}</div>
@@ -95,7 +95,7 @@
     </div>
     <div class="contenedorModulosApp ed-container total no-padding">
         <div class="ed-item total no-padding base100">
-        	<div id="contentAppProyectos" style="border:1px solid #FF0000;height: calc(100vh - 56px);">Contenedor</div>
+        	<div id="contentAppProyectos" style="border:1px solid #FF0000;height: calc(100vh - 56px);"></div>
         </div>
     </div>
     <script>
@@ -159,7 +159,10 @@
 			url=url+"proyectos";
 			ajaxApp(url,"contentAppProyectos","contentAppProyectos","POST");
 			if(opt!='1'){
-				$(".menuAppMain").toggleClass("mostrarMenuAppMain");
+				if($(window).width() < 769){
+					$(".menuAppMain").toggleClass("mostrarMenuAppMain");
+				}
+				
 			}
 		}
 

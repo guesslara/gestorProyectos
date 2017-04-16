@@ -59,13 +59,10 @@
 			// echo "<pre>";
 			// print_r($detalleProj);
 			// echo "</pre>";
-
 			$responsable=explode(",",$detalleProj->responsable);
-
 			// echo "<pre>";
 			// print_r($responsable);
 			// echo "</pre>";
-
 			for ($i=0; $i < count($responsable); $i++) { 
 				$resProj=$this->proyectos_model->getUsrProyectos($responsable[$i]);
 				$this->tpl->assign_block_vars('LISTADO_RESP_PROJ',array(
@@ -73,7 +70,6 @@
 					'RESP_PROJ_APATERNO'	=> $resProj->apaterno
 				));
 			}
-
 			$this->tpl->assign_vars(array(
             	'DIR_MOD'   	=> $this->dirPublico,
             	'DIR_VIEW'  	=> $this->dirVistas,
@@ -90,10 +86,37 @@
 				'HRS_DIA'		=> $detalleProj->hxdia,
 				'TOTAL_HRS'		=> $detalleProj->totalHoras,
 				'STATUS'		=> $detalleProj->status,
-				'porcentaje'	=> $detalleProj->porcentaje
-
+				'PORCENTAJE'	=> $detalleProj->porcentaje,
+				'ID_PROYECTO'	=> $idP
             ));
             $this->renderTemplate("Proyectos","detalleProyectos");
+		}
+		function logProj($idP){
+			$this->dirPublico=base_url()."dist";
+
+			$logProyectos=$this->proyectos_model->getLogProyecto($idP);
+			// echo "<pre>";
+			// print_r($logProyectos);
+			// echo "</pre>";
+			for ($i=0; $i < count($logProyectos); $i++) { 
+				// echo $logProyectos[$i]["id"];
+				$this->tpl->assign_block_vars('LISTADO_LOG_PROJ',array(
+					'ID_LOG' 			=> $logProyectos[$i]["id"],
+					'ACCION_REALIZADA'	=> $logProyectos[$i]["accion_realizada"],
+					'FECHA_BITACORA'	=> $logProyectos[$i]["fecha_bitacora"],
+					'HORA_BITACORA'		=> $logProyectos[$i]["hora_bitacora"],
+					'USUARIO'			=> $logProyectos[$i]["usuario"],
+					'NOMBRE'			=> $logProyectos[$i]["nombre"]
+				));
+			}
+
+			$this->tpl->assign_vars(array(
+            	'DIR_MOD'   	=> $this->dirPublico,
+            	'DIR_VIEW'  	=> $this->dirVistas,
+            	'URL'			=> base_url(),
+            	'ID_PROJ'		=> $idP
+            ));	
+			$this->renderTemplate("Proyectos","logProyectos");
 		}
 		/**
 		 * @parser nombre del archivo sin extension php

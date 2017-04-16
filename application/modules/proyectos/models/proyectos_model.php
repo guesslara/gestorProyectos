@@ -30,5 +30,10 @@
                 return $query->row();
             }
         }
+
+        public function getLogProyecto($idP){
+            $query = $this->db->query("SELECT bitacora.id AS id,id_proyecto,accion_realizada,fecha_bitacora,hora_bitacora,usuario,CONCAT(nombre,' ',apaterno) AS nombre FROM bitacora INNER JOIN userdbsistemas ON bitacora.responsable_bitacora=userdbsistemas.ID WHERE id_proyecto='".$idP."' ORDER BY id DESC");
+            return $query->result_array();
+        }
 	}
 ?>
