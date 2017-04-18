@@ -37,8 +37,6 @@
 		</div> -->
 		<div class="ed-item no-padding base-100">
 			<div style="text-align: center;">
-				<!-- <span><a href="#">Nuevo proyecto</a></span>
-				<span><a href="#">Listar proyectos</a></span> -->
 				<ul class="ed-menu">
 					<li class="estiloMenuModulo"><a href="#" class="activado">Listar proyectos</a></li>
 					<li class="estiloMenuModulo"><a href="#">Nuevo proyecto</a></li>

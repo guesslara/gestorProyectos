@@ -1,14 +1,33 @@
-<div class="ed-container full headerPoryectos" style="padding:7px;">
-	<div class="ed-item base-70 no-padding">
+<div class="ed-container full headerPoryectos">
+	<!-- <div class="ed-item base-70 no-padding">
 		<a href="javascript:void(0)" onclick="cargarProyectos('{URL}','1')" title="Mostrar men&uacute;"><span class="icon icon-izquierda"></span></a>
 		<span class="tituloProyectos">{NOMBRE_PROJ}</span>
 	</div>
 	<div class="ed-item base-20"></div>
 	<div class="ed-item base-10 no-padding">
 		<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
+	</div> -->
+	<div class="ed-item no-padding base-5">
+		<div style="margin-top: 7px;"><a href="javascript:void(0)" onclick="cargarProyectos('{URL}','1')" title="Mostrar men&uacute;"><span class="icon icon-izquierda"></span></a></div>
+	</div>
+	<div class="ed-item no-padding base-95">
+		<div style="text-align: center;">
+			<ul class="ed-menu">
+				<li class="estiloMenuModulo"><a href="#">Hitos</a></li>
+				<li class="estiloMenuModulo"><a href="#" class="activado">Detalle proyecto</a></li>
+				<li class="estiloMenuModulo"><a href="#">Nuevo hito</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
+
 <div class="ed-container alturaDetalleProyectos scrollVertical">
+	<div class="ed-item base-100 movil-20">
+		<div class="detalleNombreCompleto">Nombre:</div>
+	</div>
+	<div class="ed-item base-100 movil-80">
+		<div class="descProyectoDetalles">{NOMBRE_PROJ}</div>
+	</div>
 	<div class="ed-item base-100 movil-20">
 		<div class="detalleNombreCompleto">Responsable:</div>
 	</div>
