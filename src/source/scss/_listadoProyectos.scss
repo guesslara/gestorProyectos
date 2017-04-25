@@ -15,8 +15,10 @@
 	margin-bottom:0;
 	list-style:none;
 	padding-left:0;
-	width: 1000px;
 	margin: auto;
+	@media screen and (min-width: 1024px) {
+  		width: 1000px;	
+	}
 }
 .a_SelectorProyecto{
 	display: block;
