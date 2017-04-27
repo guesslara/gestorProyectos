@@ -1,8 +1,7 @@
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
-  height: 100%; }
+  background: #FFF; }
 
 .alignDerecha {
   text-align: right; }
@@ -161,7 +160,7 @@ body {
 .menuAppMain {
   width: 225px;
   height: calc(100% - 56px);
-  background: #FFFFFF;
+  background: #EEEEEE;
   margin-top: 2px;
   z-index: 999;
   position: absolute;
@@ -185,6 +184,9 @@ body {
   .menuAppMain .estiloAdmonItem:hover {
     cursor: pointer;
     background: #e3efff; }
+  @media screen and (min-width: 768px) {
+    .menuAppMain {
+      margin-top: 0; } }
 
 @media screen and (min-width: 768px) {
   .menuAppMain {
@@ -200,7 +202,6 @@ body {
     left: -225px; } }
 
 .contenedorModulosApp {
-  background: #EEEEEE;
   height: calc(100% - 56px);
   color: #000;
   position: relative; }

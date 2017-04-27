@@ -194,7 +194,7 @@
   width: 225px;
   height: -webkit-calc(100% - 56px);
   height: calc(100% - 56px);
-  background: #FFFFFF;
+  background: #EEEEEE;
   margin-top: 2px;
   z-index: 999;
   position: absolute;
@@ -226,6 +226,10 @@
     cursor: pointer;
     background: #e3efff;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -248,7 +252,6 @@
 }
 
 .contenedorModulosApp {
-  background: #EEEEEE;
   height: -webkit-calc(100% - 56px);
   height: calc(100% - 56px);
   color: #000;
