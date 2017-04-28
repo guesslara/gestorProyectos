@@ -76,6 +76,9 @@
     
     <div class="ed-container menuAppMain">
     	<div class="ed-item no-padding base-100">
+    		<div class="optCerrarMenu">X</div>
+    	</div>
+    	<div class="ed-item no-padding base-100">
     		<div class="barraMenuApp">
     			<ul class="ed-menu default">
     				<li>                		

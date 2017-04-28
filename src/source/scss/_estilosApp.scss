@@ -7,7 +7,7 @@
   padding: 1em;
   font-size: 1em;
   height: 3.5em;
-
+  position: fixed;
   & .icon-menu {
     margin-left: .7em;
   }
@@ -192,10 +192,8 @@
 /*bloque del menu*/
 .menuAppMain {
   width: 225px;
-  height: -webkit-calc(100% - 56px);
-  height: calc(100% - 56px);
+  height: 100%;
   background: #EEEEEE;
-  margin-top: 2px;
   z-index: 999;
   position: absolute;
   border: 1px solid #CCC;
@@ -210,6 +208,10 @@
     /*max-width: 70%;*/
     /*height:auto;
         margin-top: 1.5em;*/
+  }
+  & .optCerrarMenu{
+    padding: 5px;
+    text-align: right;
   }
   & .barraMenuApp {
     height: -webkit-calc(100% - 151px);
