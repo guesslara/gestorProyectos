@@ -72,7 +72,7 @@
 
 	<!-- Listado de proyectos -->
 	<div class="ed-container full">
-		<div class="ed-item base-100 no-padding itemsListadoProyectos scrollVertical">
+		<div class="ed-item base-100 no-padding itemsListadoProyectos">
 			<ul class="listadoItemsProyectos">
 			<!-- BEGIN LISTADO_PROYECTOS -->
 				<li>

@@ -100,7 +100,7 @@
     
     <div class="contenedorModulosApp ed-container total no-padding">
         <div class="ed-item total no-padding base100">
-        	<div id="contentAppProyectos" style="border:1px solid #FF0000;"></div>
+        	<div id="contentAppProyectos" style="border: 0px solid #FF0000;background: black;margin-top: 3.5em;"></div>
         </div>
     </div>
     <script>
