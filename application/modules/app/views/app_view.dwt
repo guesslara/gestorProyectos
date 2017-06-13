@@ -32,77 +32,93 @@
 	<input type="hidden" id="idUsuarioAPP" value="{IDUSUARIO}" />
     <input type="hidden" id="idProfileAPP" values="{PERFIL}" />
     <input type="hidden" id="baseUrl" value="{URL}" />
-    <div class="ed-container total no-padding">
-        <div class="ed-item total no-padding header-movi base-100">
-            <span id="menuAppBarra" class="icon icon-menu iconoBarraApp"></span>
-            <span class="tituloApp">Dashboard</span>        
-            <div class="datosUsuarioApp">
-                <div class="nombreUsuarioApp">{NOMBRE}</div>
-                <div class="razonSocialApp">{USUARIO}</div>
-                <a href="#" id="enlaceUsuarioApp"><span class="iconW iconW-user icono-derecha espacio-iconos usuario iconoNuevo" style=""></span></a>
-            </div>
-            <div class="botonesHeaderApp">
-                <span class="iconW iconW-bell iconoBotonHeader"></span>
-                <span class="textoBotonHeaderApp">Mensajes</span>
-            </div>
-            <div class="botonesHeaderApp">
-                <span class="iconW iconW-question iconoBotonHeader"></span>
-                <span class="textoBotonHeaderApp">Ayuda</span>
-            </div>
-            <div class="botonesHeaderApp">
-                <span class="iconW iconW-lifebuoy iconoBotonHeader"></span>
-                <span class="textoBotonHeaderApp">Soporte</span>
-            </div>
-        </div>
-    </div>
-	<div id="infoUsuarioApp" class="ed-container infoUsuario">
-        <!-- <div class="datosUsuario">Perfil</div> -->
-        <div class="ed-item no-padding">
-	        <div class="datosUsuario"><img src="{LOGOCLIENTE}" border="0" /></div>
-	        <div class="datosUsuarioCerrar">
-	        	<ul>
-	        		<li class="botonesDes"><span class="iconW iconW-bell icono-derecha espacio-iconos"></span>&nbsp;Notificaciones</li>
-	                <li class="botonesDes"><span class="iconW iconW-question icono-derecha espacio-iconos"></span>&nbsp;Ayuda</li>
-	                <li class="botonesDes"><span class="iconW iconW-lifebuoy icono-derecha espacio-iconos"></span>&nbsp;Soporte</li>
-	                <li><span class="iconW iconW-wrench icono-derecha espacio-iconos"></span>&nbsp;Configuraci&oacute;n</li>
-	        		<li><span class="iconW iconW-lock"></span>&nbsp;<a href="{URL}login/logout_ci" id="cerrarSesion">Cerrar sesi&oacute;n</a></li>
-	        	</ul>
-	        </div>	
-        </div>
-    </div>
+
+
+	<div class="ed-container full">
+		<div class="ed-item no-padding base-100 tablet-15 web-15">
+			<div class="ed-container menuAppMain">
+		    	<div class="ed-item no-padding base-100">
+		    		<div class="barraMenuApp">
+		    			<ul class="ed-menu default">
+		    				<li>                		
+		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-command icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Dashboard</a>
+		                	</li>
+		                	<li>                		
+		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-list-numbered icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Proyectos</a>
+		                	</li>
+		                	<li>                		
+		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-wrench icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Configuraci&oacute;n</a>
+		                	</li>
+		                	<li>                		
+		                		<a href="{URL}login/logout_ci" style="font-size: .9em;"><span class="iconW iconW-lock icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Cerrar sesi&oacute;n</a>
+		                	</li>
+		            	</ul>	
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<div class="ed-item no-padding base-100 tablet-85 web-85">
+			<div class="ed-container no-padding">
+		        <div class="ed-item no-padding header-movi base-100">
+		            <span id="menuAppBarra" class="icon icon-menu iconoBarraApp"></span>
+		            <span class="tituloApp">Dashboard</span>        
+		            <div class="datosUsuarioApp">
+		                <div class="nombreUsuarioApp">{NOMBRE}</div>
+		                <div class="razonSocialApp">{USUARIO}</div>
+		                <a href="#" id="enlaceUsuarioApp"><span class="iconW iconW-user icono-derecha espacio-iconos usuario iconoNuevo" style=""></span></a>
+		            </div>
+		            <div class="botonesHeaderApp">
+		                <span class="iconW iconW-bell iconoBotonHeader"></span>
+		                <span class="textoBotonHeaderApp">Mensajes</span>
+		            </div>
+		            <div class="botonesHeaderApp">
+		                <span class="iconW iconW-question iconoBotonHeader"></span>
+		                <span class="textoBotonHeaderApp">Ayuda</span>
+		            </div>
+		            <div class="botonesHeaderApp">
+		                <span class="iconW iconW-lifebuoy iconoBotonHeader"></span>
+		                <span class="textoBotonHeaderApp">Soporte</span>
+		            </div>
+		        </div>
+		    </div>
+			<div id="infoUsuarioApp" class="ed-container infoUsuario">
+		        <!-- <div class="datosUsuario">Perfil</div> -->
+		        <div class="ed-item no-padding">
+			        <div class="datosUsuario"><img src="{LOGOCLIENTE}" border="0" /></div>
+			        <div class="datosUsuarioCerrar">
+			        	<ul>
+			        		<li class="botonesDes"><span class="iconW iconW-bell icono-derecha espacio-iconos"></span>&nbsp;Notificaciones</li>
+			                <li class="botonesDes"><span class="iconW iconW-question icono-derecha espacio-iconos"></span>&nbsp;Ayuda</li>
+			                <li class="botonesDes"><span class="iconW iconW-lifebuoy icono-derecha espacio-iconos"></span>&nbsp;Soporte</li>
+			                <li><span class="iconW iconW-wrench icono-derecha espacio-iconos"></span>&nbsp;Configuraci&oacute;n</li>
+			        		<li><span class="iconW iconW-lock"></span>&nbsp;<a href="{URL}login/logout_ci" id="cerrarSesion">Cerrar sesi&oacute;n</a></li>
+			        	</ul>
+			        </div>	
+		        </div>
+		    </div>
+
+		    <div class="contenedorModulosApp ed-container total no-padding">
+		        <div class="ed-item total no-padding base100">
+		        	<div id="contentAppProyectos" style="border: 0px solid #FF0000;background: black;"></div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+    
     <div class="buscadorAppMain">
     	<div class="buscadorLabel"><input type="text" id="txtBusquedaAppMain" placeholder="Búsqueda ..." /></div>
     </div>
     
-    <div class="ed-container menuAppMain">
-    	<div class="ed-item no-padding base-100">
-    		<div class="optCerrarMenu">X</div>
-    	</div>
-    	<div class="ed-item no-padding base-100">
-    		<div class="barraMenuApp">
-    			<ul class="ed-menu default">
-    				<li>                		
-                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-command icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Dashboard</a>
-                	</li>
-                	<li>                		
-                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-list-numbered icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Proyectos</a>
-                	</li>
-                	<li>                		
-                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-wrench icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Configuraci&oacute;n</a>
-                	</li>
-                	<li>                		
-                		<a href="{URL}login/logout_ci" style="font-size: .9em;"><span class="iconW iconW-lock icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Cerrar sesi&oacute;n</a>
-                	</li>
-            	</ul>	
-    		</div>
-    	</div>
-    </div>
     
-    <div class="contenedorModulosApp ed-container total no-padding">
-        <div class="ed-item total no-padding base100">
-        	<div id="contentAppProyectos" style="border: 0px solid #FF0000;background: black;margin-top: 3.5em;"></div>
-        </div>
-    </div>
+    
+    
     <script>
     	$(document).ready(function(){
 			//redimensionarModuloPrincipal();

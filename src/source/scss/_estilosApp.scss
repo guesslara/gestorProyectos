@@ -7,7 +7,6 @@
   padding: 1em;
   font-size: 1em;
   height: 3.5em;
-  position: fixed;
   & .icon-menu {
     margin-left: .7em;
   }
@@ -191,13 +190,14 @@
 
 /*bloque del menu*/
 .menuAppMain {
-  width: 225px;
+  width: 100%;
   height: 100%;
   background: #EEEEEE;
   z-index: 999;
   position: absolute;
   border: 1px solid #CCC;
   left: -225px;
+  position: relative;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
   & .img_logoClienteApp {
@@ -214,8 +214,7 @@
     text-align: right;
   }
   & .barraMenuApp {
-    height: -webkit-calc(100% - 151px);
-    height: calc(100% - 151px);
+    height: 100vh;
     overflow-y: auto;
   }
 
@@ -254,17 +253,17 @@
 }
 
 .contenedorModulosApp {
-  height: -webkit-calc(100% - 56px);
-  height: calc(100% - 56px);
+  // height: -webkit-calc(100% - 56px);
+  // height: calc(100% - 56px);
   color: #000;
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .contenedorModulosApp {
-    margin-left: 225px;
-    width: -webkit-calc(100% - 225px);
-    width: calc(100% - 225px);
+    // margin-left: 225px;
+    // width: -webkit-calc(100% - 225px);
+    // width: calc(100% - 225px);
   }
 }
 

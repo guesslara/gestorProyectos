@@ -14,8 +14,7 @@ body {
   color: #FFF;
   padding: 1em;
   font-size: 1em;
-  height: 3.5em;
-  position: fixed; }
+  height: 3.5em; }
   .header-movi .icon-menu {
     margin-left: .7em; }
   .header-movi .icon-menu:hover {
@@ -159,13 +158,14 @@ body {
 
 /*bloque del menu*/
 .menuAppMain {
-  width: 225px;
+  width: 100%;
   height: 100%;
   background: #EEEEEE;
   z-index: 999;
   position: absolute;
   border: 1px solid #CCC;
   left: -225px;
+  position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
   .menuAppMain .img_logoClienteApp {
@@ -179,7 +179,7 @@ body {
     padding: 5px;
     text-align: right; }
   .menuAppMain .barraMenuApp {
-    height: calc(100% - 151px);
+    height: 100vh;
     overflow-y: auto; }
   .menuAppMain .estiloAdmonItem {
     padding: 7px 3px;
@@ -205,14 +205,8 @@ body {
     left: -225px; } }
 
 .contenedorModulosApp {
-  height: calc(100% - 56px);
   color: #000;
   position: relative; }
-
-@media screen and (min-width: 768px) {
-  .contenedorModulosApp {
-    margin-left: 225px;
-    width: calc(100% - 225px); } }
 
 .paddingIconosMenu {
   padding: .4em; }
