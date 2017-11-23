@@ -35,29 +35,32 @@
 
 
 	<div class="ed-container full">
-		<div class="ed-item no-padding base-100 tablet-15 web-15">
+		<div class="ed-item no-padding base-100 movil-100 tablet-15 web-15">
 			<div class="ed-container menuAppMain">
+				<div class="ed-item no-padding base-100">
+					<div class="logoMenuImagen"></div>
+				</div>
 		    	<div class="ed-item no-padding base-100">
 		    		<div class="barraMenuApp">
 		    			<ul class="ed-menu default">
 		    				<li>                		
-		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-command icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Dashboard</a>
+		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .8em;"><span class="iconW iconW-command icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Dashboard</a>
 		                	</li>
 		                	<li>                		
-		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-list-numbered icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Proyectos</a>
+		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .8em;"><span class="iconW iconW-list-numbered icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Proyectos</a>
 		                	</li>
 		                	<li>                		
-		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .9em;"><span class="iconW iconW-wrench icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Configuraci&oacute;n</a>
+		                		<a href="#" onclick="cargarProyectos('{URL}')" style="font-size: .8em;"><span class="iconW iconW-wrench icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Configuraci&oacute;n</a>
 		                	</li>
 		                	<li>                		
-		                		<a href="{URL}login/logout_ci" style="font-size: .9em;"><span class="iconW iconW-lock icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Cerrar sesi&oacute;n</a>
+		                		<a href="{URL}login/logout_ci" style="font-size: .8em;"><span class="iconW iconW-lock icono-derecha espacio-iconos paddingIconosMenu" style="margin-right: .4em;"></span>Cerrar sesi&oacute;n</a>
 		                	</li>
 		            	</ul>	
 		    		</div>
 		    	</div>
 		    </div>
 		</div>
-		<div class="ed-item no-padding base-100 tablet-85 web-85">
+		<div class="ed-item no-padding base-100 movil-100 tablet-85 web-85">
 			<div class="ed-container no-padding">
 		        <div class="ed-item no-padding header-movi base-100">
 		            <span id="menuAppBarra" class="icon icon-menu iconoBarraApp"></span>

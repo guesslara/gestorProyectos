@@ -21,7 +21,7 @@
 	</div>
 </div>
 
-<div class="ed-container alturaDetalleProyectos scrollVertical">
+<div class="ed-container alturaDetalleProyectos">
 	<div class="ed-item base-100 movil-20">
 		<div class="detalleNombreCompleto">Nombre:</div>
 	</div>

@@ -124,7 +124,6 @@ body {
   border-bottom: 1px solid #CCC;
   font-size: .8em;
   display: none;
-  -webkit-transition: all .5 s;
   transition: all .5 s;
   z-index: 100; }
 
@@ -156,18 +155,21 @@ body {
 .mostrarSubmenuUsuario {
   display: block; }
 
+.logoMenuImagen {
+  height: 55px; }
+
 /*bloque del menu*/
 .menuAppMain {
   width: 100%;
-  height: 100%;
-  background: #EEEEEE;
+  /*background: #EEEEEE;*/
+  background: #212121;
   z-index: 999;
   position: absolute;
-  border: 1px solid #CCC;
-  left: -225px;
+  /*border: 1px solid #CCC;*/
+  border: 1px solid #212121;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  display: none; }
   .menuAppMain .img_logoClienteApp {
     height: 150px;
     text-align: center; }
@@ -189,7 +191,8 @@ body {
     background: #e3efff; }
   @media screen and (min-width: 768px) {
     .menuAppMain {
-      margin-top: 0; } }
+      margin-top: 0;
+      display: block; } }
 
 @media screen and (min-width: 768px) {
   .menuAppMain {
@@ -198,7 +201,7 @@ body {
     display: none; } }
 
 .mostrarMenuAppMain {
-  left: 0px; }
+  display: block; }
 
 @media screen and (min-width: 768px) {
   .mostrarMenuAppMain {
@@ -273,13 +276,11 @@ body {
 
 .mostrarMenu {
   left: 0;
-  -webkit-transition: all 1s;
   transition: all 1s;
   display: block; }
 
 .mostrarSubmenu {
   right: 0;
-  -webkit-transition: all 1s;
   transition: all 1s;
   display: block; }
 
@@ -326,7 +327,8 @@ body {
     height: 3.5em;
     margin-left: .4em;
     font-weight: 200;
-    padding: .3em; }
+    padding: .3em;
+    display: none; }
   .contentListaProyectos .fechaProyecto {
     font-size: .7em;
     margin-left: .4em;

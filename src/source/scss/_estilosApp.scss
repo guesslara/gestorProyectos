@@ -187,19 +187,24 @@
 .mostrarSubmenuUsuario {
   display: block;
 }
-
+.logoMenuImagen{
+  height: 55px;
+  // border: 1px solid blue;
+}
 /*bloque del menu*/
 .menuAppMain {
   width: 100%;
-  height: 100%;
-  background: #EEEEEE;
+  // height: 100vh;
+  /*background: #EEEEEE;*/
+  background: $primary-text-color;
   z-index: 999;
   position: absolute;
-  border: 1px solid #CCC;
-  left: -225px;
+  /*border: 1px solid #CCC;*/
+  border: 1px solid $primary-text-color;
   position: relative;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
+  display: none;
   & .img_logoClienteApp {
     height: 150px;
     text-align: center;
@@ -230,6 +235,7 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
+    display: block;
   }
 }
 
@@ -243,7 +249,8 @@
 }
 
 .mostrarMenuAppMain {
-  left: 0px;
+  //left: 0px;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
