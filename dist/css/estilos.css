@@ -156,7 +156,8 @@ body {
   display: block; }
 
 .logoMenuImagen {
-  height: 55px; }
+  height: 55px;
+  background: #EEEEEE; }
 
 /*bloque del menu*/
 .menuAppMain {
@@ -182,7 +183,8 @@ body {
     text-align: right; }
   .menuAppMain .barraMenuApp {
     height: 100vh;
-    overflow-y: auto; }
+    overflow-y: auto;
+    background: #EEEEEE; }
   .menuAppMain .estiloAdmonItem {
     padding: 7px 3px;
     font-size: 1.1em; }
@@ -283,6 +285,9 @@ body {
   right: 0;
   transition: all 1s;
   display: block; }
+
+.itemsListadoProyectos {
+  background: #FFFFFF; }
 
 .bordeInferiorListaProyectos {
   border-bottom: 1px solid #CCC; }

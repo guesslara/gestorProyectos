@@ -61,7 +61,7 @@
 		    </div>
 		</div>
 		<div class="ed-item no-padding base-100 movil-100 tablet-85 web-85">
-			<div class="ed-container no-padding">
+			<div class="ed-container full no-padding">
 		        <div class="ed-item no-padding header-movi base-100">
 		            <span id="menuAppBarra" class="icon icon-menu iconoBarraApp"></span>
 		            <span class="tituloApp">Dashboard</span>        

@@ -14,6 +14,6 @@ gulp.task('estilosP', () =>
 		.pipe(gulp.dest('../dist/css/'))
 );
 
-gulp.task('default', () =>
-	gulp.watch('source/scss/*.scss',['estilosP'])
-);
+gulp.task('default', function() {
+  gulp.watch('source/scss/*.scss', gulp.series('estilosP'));
+});

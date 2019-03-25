@@ -189,6 +189,7 @@
 }
 .logoMenuImagen{
   height: 55px;
+  background: $colorBarraMenu;
   // border: 1px solid blue;
 }
 /*bloque del menu*/
@@ -221,6 +222,7 @@
   & .barraMenuApp {
     height: 100vh;
     overflow-y: auto;
+    background: $colorBarraMenu;
   }
 
   & .estiloAdmonItem {
