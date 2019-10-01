@@ -1,0 +1,5 @@
+node_modules/
+.phpintel/
+application/ci_sessions/
+ci_sessions/
+DS_STORE

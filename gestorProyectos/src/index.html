@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyectos</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/ed-grid/css/estilos.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- <script type="text/javascript" src="libs/w2ui-1.4.3/w2ui-1.4.3.min.js"></script> -->
+	<!-- <link rel="stylesheet" type="text/css" href="libs/w2ui-1.4.3/w2ui-1.4.3.min.css" /> -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+	<div class="ed-container full headerPoryectos">
+		<div class="ed-item base-70 no-padding">
+			<a href="javascript:void(0)" onclick="mostrarMenu()" title="Mostrar men&uacute;"><span class="icon icon-menu"></span></a>
+			<span class="tituloProyectos">Proyectos</span>
+		</div>
+		<div class="ed-item base-20"></div>
+		<div class="ed-item base-10 no-padding">
+			<a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a>
+		</div>
+	</div>
+
+	<nav id="menuProyectos" class="contentMenuProyectos">
+		<div class="ed-container full">
+			<div class="ed-item buscadorMenu">
+				<input type="text" id="" placeholder="B&uacute;squeda" class="txtBuscadorMenu">
+			</div>
+			<div class="ed-item no-padding">
+				<ul class="ed-menu default menuProyectos">
+					<li class="itemMenuProyectos"><a href="#">Nuevo proyecto</a></li>
+					<li class="itemMenuProyectos"><a href="#">Listar proyectos</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<nav id="submenuVentana" class="contentSubmenu">
+		<div class="ed-container full">
+			<div class="ed-item no-padding">
+				<ul class="ed-menu default">
+					<li class="itemSubmenuProyectos"><a href="#">Editar</a></li>
+					<li class="itemSubmenuProyectos"><a href="#">Eliminar</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Listado de proyectos -->
+	<div class="ed-container full">
+		<div class="ed-item base-100 no-padding itemsListadoProyectos scrollVertical">
+			
+			<div class="ed-container contentListaProyectos bordeInferiorListaProyectos">
+				<div class="ed-item base-60 tablet-80 web-80 no-padding bordeDerechoListaProyectos">
+					<div class="nameProyecto">Proyecto 1</div>
+					<div class="descProyecto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum modi et dolores eaque, laudantium eligendi ratione nulla.</div>
+					<div class="fechaProyecto">Finaliza el 2016-03-01</div>
+				</div>
+				<div class="ed-item base-30 tablet-10 web-15 no-padding bordeDerechoListaProyectos">
+					<div id="graficoAvance1" class="graficoAvance"></div>
+				</div>
+				<div class="ed-item base-10 tablet-10 web-5 no-padding">
+					<div class="seleccionPoryecto"><a href="detalleProyecto.html" title="De clic para mostrar el proyecto"><span class="icon icon-derecha"></span></a></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

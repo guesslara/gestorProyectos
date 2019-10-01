@@ -7,7 +7,8 @@ class Template {
 	var $compiled_code = array();
 	var $uncompiled_code = array();
 
-	function Template($root = "."){
+	// function Template($root = "."){
+	function __construct($root = "."){
 		$this->set_rootdir($root);
 	}
 
@@ -30,10 +31,15 @@ class Template {
 		}
 
 		reset($filename_array);
-		while(list($handle, $filename) = each($filename_array)){
-			$this->files[$handle] = $this->make_filename($filename.'.dwt');
+		// while(list($handle, $filename) = each($filename_array)){
+		// 	$this->files[$handle] = $this->make_filename($filename.'.dwt');
+		// }
+		// echo "<pre>";
+		// print_r($filename_array);
+		// echo "</pre>";exit();
+		foreach ($filename_array as $key => $value) {
+			$this->files[$key] = $this->make_filename($value.'.dwt');
 		}
-
 		return true;
 	}
 
@@ -86,8 +92,11 @@ class Template {
 
 	function assign_vars($vararray){
 		reset ($vararray);
-		while (list($key, $val) = each($vararray)){
-			$this->_tpldata['.'][0][$key] = $val;
+		// while (list($key, $val) = each($vararray)){
+		// 	$this->_tpldata['.'][0][$key] = $val;
+		// }
+		foreach ($vararray as $key => $value) {
+			$this->_tpldata['.'][0][$key] = $value;
 		}
 
 		return true;

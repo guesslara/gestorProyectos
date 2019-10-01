@@ -1,0 +1,45 @@
+.detalleNombreCompleto{
+	font-size: .8em;
+	font-weight: 600;
+	padding: 1em 0;
+}
+.descProyectoDetalles{
+	font-size: .8em;
+	padding: 1.1em 0;
+	text-align: left;
+}
+.graficoDetalleProyecto{
+	border: 1px solid #F0F0F0;
+	height:290px;
+	width: 315px;
+	margin: 15px auto;
+}
+.alturaDetalleProyectos{
+	height:calc(100vh - 51.8px);
+	background: #FFFFFF;
+}
+.centrarContenido{
+	text-align: center;
+}
+.logDesc{
+	font-size: .8em;
+	padding: 1em 0;
+	text-align: center;
+	border: 1px solid #CCC;
+	margin: 15px auto;
+	& a{
+		color: blue;
+		display: block;
+	}
+}
+.delProyecto{
+	font-size: .8em;
+	padding: 1em 0;
+	text-align: center;
+	background: #FF0000;
+	margin: 15px auto;
+	& a{
+		color: #FFF;
+		display: block;
+	}
+}

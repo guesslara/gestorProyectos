@@ -1,0 +1,30 @@
+<div class="ed-container full headerPoryectos" style="padding:7px;">
+	<div class="ed-item base-70 no-padding">
+		<a href="javascript:void(0)" onclick="mostrarDetalleProyecto('{ID_PROJ}','{URL}')" title="Mostrar men&uacute;"><span class="icon icon-izquierda"></span></a>
+		<span class="tituloProyectos">Eventos del proyecto</span>
+	</div>
+	<div class="ed-item base-20"></div>
+	<div class="ed-item base-10 no-padding">
+		<!-- <a href="javascript:void(0)" onclick="mostrarSubmenu()"><span class="icon icon-menu-secundario menu-secundario"></span></a> -->
+	</div>
+</div>
+<div class="ed-container full alturaDetalleProyectos scrollVertical">
+	<div class="ed-item">
+		<!-- BEGIN LISTADO_LOG_PROJ -->
+		<div class="ed-container elementoLogEvento">
+			<div class="ed-item base-20 tablet-20 web-10">
+				<div class="avatrUsuario">&nbsp;</div>		
+			</div>
+			<div class="ed-item base-80 tablet-30 web-30">
+				<div class="nombreUsuario">{LISTADO_LOG_PROJ.NOMBRE}</div>
+				<div class="fechaLog">{LISTADO_LOG_PROJ.FECHA_BITACORA} - {LISTADO_LOG_PROJ.HORA_BITACORA}</div>
+			</div>
+			<div class="ed-item base-100 tablet-50 web-60">
+				<div class="descLog">
+					{LISTADO_LOG_PROJ.ACCION_REALIZADA}
+				</div>
+			</div>
+		</div>
+		<!-- END LISTADO_LOG_PROJ -->
+	</div>
+</div>
